@@ -41,6 +41,7 @@ body{
 
 .thumbnails-list li img{
     border-radius: 10px;
+    cursor: pointer;
     height: 60px;
     margin: 0 auto;
     margin-right: 12px;
@@ -50,12 +51,12 @@ body{
 
 /* preview section */
 .preview-section{
-    
     margin: 0 auto;
     width:35%;
 }
 .cart-image{
     border-radius: 10px;
+    cursor: pointer;
     height: 320px;
     margin-left: 200px;
     width: 320px;
@@ -112,6 +113,50 @@ body{
     font-size: 1rem;
     width: 13rem;
 }
+
+/* lightbox */
+
+.lightbox-display{
+    opacity: 1;
+    position: absolute;
+    top: 10%;
+    visibility: hidden;
+}
+
+.cart-lightbox-image{
+    border-radius: 10px;
+    margin: 0 50%;
+    padding: 0;
+    position: relative;
+    top: 0%;
+    width: 30%;
+}
+
+.thumbnails-lightbox-list{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-left: 475px;
+    margin-top: 40px;
+    position: absolute;
+    width: 33%;
+}
+
+.thumbnails-lightbox-list li img{
+    border-radius: 10px;
+    cursor: pointer;
+    height: 60px;
+    margin: 0 auto;
+    margin-right: 12px;
+    width: 80px;
+    /* margin-top: 480%; */
+}
+
+.dull-background{
+    opacity: 0.33;
+}
+
+
 
 /* media query */
 @media (max-width:600px) {
